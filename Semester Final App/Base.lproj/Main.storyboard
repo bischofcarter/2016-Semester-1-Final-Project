@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Semester_Final_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Hello! Welcome to" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="50e-Dt-awo">
+                                <rect key="frame" x="156" y="75" width="289" height="88"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Counter" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JYa-um-Jtn">
+                                <rect key="frame" x="33" y="269" width="534" height="181"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="110"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="4Sj-Qj-oF7">
+                                <rect key="frame" x="272" y="206" width="72" height="82"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="wLT-DI-diE">
+                                        <rect key="frame" x="0.0" y="0.0" width="72" height="82"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="VF8-JO-gg9">
+                                                <rect key="frame" x="0.0" y="0.0" width="72" height="82"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="72" id="4qH-p7-tSy"/>
+                                                    <constraint firstAttribute="height" constant="82" id="afP-kh-vh0"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Cup" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tYg-Ig-HEQ">
+                                <rect key="frame" x="125" y="134" width="351" height="208"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="119"/>
+                                <color key="textColor" red="0.0" green="0.50196081400000003" blue="1" alpha="0.55037715517241381" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bOg-Js-e96">
+                                <rect key="frame" x="172" y="451" width="256" height="84"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Click for My Cup Counter"/>
+                                <connections>
+                                    <segue destination="9SO-FB-v5V" kind="show" id="EIG-sj-QCl"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="tYg-Ig-HEQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9Al-6Q-vRi"/>
+                            <constraint firstItem="bOg-Js-e96" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="193" id="Eci-A6-95B"/>
+                            <constraint firstItem="JYa-um-Jtn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="M1W-S8-xEo"/>
+                            <constraint firstItem="tYg-Ig-HEQ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-62" id="P6u-nR-KlF"/>
+                            <constraint firstItem="50e-Dt-awo" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-181" id="dPb-gX-Bnd"/>
+                            <constraint firstItem="50e-Dt-awo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="doA-gt-1v7"/>
+                            <constraint firstItem="JYa-um-Jtn" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="59.5" id="eZs-Cv-vJo"/>
+                            <constraint firstItem="bOg-Js-e96" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yg1-dK-GqN"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="288" y="321"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="jRA-1y-If6">
+            <objects>
+                <viewController id="9SO-FB-v5V" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cVO-0R-WCu"/>
+                        <viewControllerLayoutGuide type="bottom" id="8GW-ka-cEv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="X5x-xd-YNO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="My Cup Counter" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zs3-MD-sTb">
+                                <rect key="frame" x="97" y="37" width="220" height="63"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Time you spend exercising in minutes" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dmF-99-eLV">
+                                <rect key="frame" x="49" y="146" width="314" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Based on how long you exercise:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gz4-cZ-Nj4">
+                                <rect key="frame" x="66" y="97" width="297" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="You should be drinking:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3d4-Ve-hrS">
+                                <rect key="frame" x="111" y="196" width="192" height="37"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="X#" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HT7-ky-To1">
+                                <rect key="frame" x="111" y="241" width="51" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Cups of water per day." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ExG-0u-AgN">
+                                <rect key="frame" x="170" y="244" width="180" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gz4-cZ-Nj4" firstAttribute="centerX" secondItem="X5x-xd-YNO" secondAttribute="centerX" id="LGK-uK-0YT"/>
+                            <constraint firstItem="ExG-0u-AgN" firstAttribute="centerY" secondItem="X5x-xd-YNO" secondAttribute="centerY" constant="-109.5" id="NpT-Ir-bf4"/>
+                            <constraint firstItem="HT7-ky-To1" firstAttribute="centerY" secondItem="X5x-xd-YNO" secondAttribute="centerY" constant="-109" id="OSY-ag-a99"/>
+                            <constraint firstItem="Zs3-MD-sTb" firstAttribute="centerX" secondItem="X5x-xd-YNO" secondAttribute="centerX" id="QtJ-Xg-jq3"/>
+                            <constraint firstItem="3d4-Ve-hrS" firstAttribute="centerY" secondItem="X5x-xd-YNO" secondAttribute="centerY" constant="-153.5" id="W5N-Hg-HQs"/>
+                            <constraint firstItem="Zs3-MD-sTb" firstAttribute="centerY" secondItem="X5x-xd-YNO" secondAttribute="centerY" constant="-299.5" id="mmz-6Z-5I6"/>
+                            <constraint firstItem="dmF-99-eLV" firstAttribute="centerY" secondItem="X5x-xd-YNO" secondAttribute="centerY" constant="-207" id="nOq-54-AP6"/>
+                            <constraint firstItem="3d4-Ve-hrS" firstAttribute="centerX" secondItem="X5x-xd-YNO" secondAttribute="centerX" id="pcb-6q-oCG"/>
+                            <constraint firstItem="dmF-99-eLV" firstAttribute="centerX" secondItem="X5x-xd-YNO" secondAttribute="centerX" id="rdW-D2-QCy"/>
+                            <constraint firstItem="HT7-ky-To1" firstAttribute="centerX" secondItem="X5x-xd-YNO" secondAttribute="centerX" constant="-70.5" id="tbd-Ha-BIg"/>
+                            <constraint firstItem="ExG-0u-AgN" firstAttribute="centerX" secondItem="X5x-xd-YNO" secondAttribute="centerX" constant="53" id="vKr-kE-rGt"/>
+                            <constraint firstItem="gz4-cZ-Nj4" firstAttribute="centerY" secondItem="X5x-xd-YNO" secondAttribute="centerY" constant="-254.5" id="zdH-cB-543"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bfU-gC-63U" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1098" y="321"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Image" width="327" height="450"/>
+    </resources>
+</document>
